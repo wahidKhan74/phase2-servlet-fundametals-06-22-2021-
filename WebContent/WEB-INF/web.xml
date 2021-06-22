@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>phase2-servlet-fundametals-06-22-2021</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- servlet mapping -->
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GenericDemoServlet</servlet-name>
+		<servlet-class>GenericDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericDemoServlet</servlet-name>
+		<url-pattern>/gs-demo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HttpServletDemo</servlet-name>
+		<servlet-class>HttpServletDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HttpServletDemo</servlet-name>
+		<url-pattern>/http-demo</url-pattern>
+	</servlet-mapping>
+</web-app>
